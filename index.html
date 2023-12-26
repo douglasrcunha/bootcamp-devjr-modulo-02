@@ -26,9 +26,7 @@
 
         .flex-container{
             display: flex;
-            background-color: #006A6A;
             justify-content: space-around;
-            padding: 20px;
         }
         
         .header-title{
@@ -43,6 +41,67 @@
             font-size: 18px;
             margin-bottom: 15px; 
             font-weight: 600;          
+        }
+
+        .coluna1{
+            background-color: #006A6A;            
+            font-size: 12px;
+            color: #E9E9E9;
+            width: 50%;
+            padding: 20px;
+        }
+
+        .coluna2{
+            background-color: #008C8D;
+            color: #E9E9E9;
+            width: 50%;
+            padding: 20px;
+        }
+
+        .topico{
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .conteudo1{
+
+        }
+
+        .preco{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .italic{
+            font-style: italic;
+            font-size: 11px;
+            margin-left: 10px;
+        }
+
+
+        .button {
+            background-color: #CDCBCD;
+            border: none;
+            width: 100%;
+            margin-top: 20px;
+            padding: 15px 32px;
+            border-radius: 5px;
+            color: #006A6A;
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;            
+            transition-duration: 0.4s;
+        }
+
+        .button:hover {
+            background-color: #E9E9E9;
+        }
+
+        ul {
+            list-style-type: circle;
+            color: #E9E9E9;
         }
 
     </style>
@@ -62,11 +121,29 @@
             </div>
         </div>
        <div class="flex-container">
-        <div>
-           Coluna 1
+        <div class="coluna1">
+            <div class="topico">
+                Assinatura mensal:
+            </div>
+            <div class="conteudo1">
+                <span class="preco">R$ 99,99</span>
+                <span class="italic">por mês.</span> 
+            </div>
+            <div>
+                Cancele a qualquer momento.
+            </div>
+            <button class="button">Assine Agora</button>
         </div>
-        <div>
-            Coluna 2
+        <div class="coluna2">
+            Você terá acesso:
+            <ul>
+                <li>Projetos exclusivos</li>
+                <li>Tutoriais</li>
+                <li>Lives semanais</li>
+                <li>Material didático especializado</li>
+                <li>Fórun</li>
+                <li>Ofertas de emprego</li>
+            </ul>
         </div>        
        </div>
     </div>
