@@ -13,7 +13,8 @@
         .container{
             background-color: #E9E9E9;
             margin: auto;
-            margin-top: 5px;
+           /* margin-top: 0.3rem; */
+           margin-top: 5px;
             width: 600px;
             box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
             border-radius: 5px;
@@ -21,7 +22,7 @@
         }
 
         .header{
-            padding: 40px;
+            padding: 2.5rem;
         }
 
         .flex-container{
@@ -31,48 +32,48 @@
         
         .header-title{
             color: #006F6F;
-            font-size: 32px;
+            font-size: 2rem;
             font-weight: 700;
-            margin-bottom: 20px; 
+            margin-bottom: 1.2rem; 
         }
 
         .header-subtitle{
             color: #009E9E;
-            font-size: 18px;
-            margin-bottom: 15px; 
+            font-size: 1.12rem;
+            margin-bottom: 0.9rem; 
             font-weight: 600;          
         }
 
-        .coluna1{
+        .col-1{
             background-color: #006A6A;            
-            font-size: 12px;
+            font-size: 0.75rem;
             color: #E9E9E9;
             width: 50%;
-            padding: 20px;
+            padding: 1.2rem;
         }
 
-        .coluna2{
+        .col-2{
             background-color: #008C8D;
             color: #E9E9E9;
             width: 50%;
-            padding: 20px;
+            padding: 1.2rem;
         }
 
         .topico{
-            font-size: 16px;
-            margin-bottom: 20px;
+            font-size: 1rem;
+            margin-bottom: 1.2rem;
             text-align: center;
         }
 
 
         .preco{
-            font-size: 20px;
+            font-size: 1.62rem;
             font-weight: 700;
         }
         .italic{
             font-style: italic;
-            font-size: 11px;
-            margin-left: 10px;
+            font-size: 0.75rem;
+            margin-left: 0.6rem;
         }
 
 
@@ -80,14 +81,14 @@
             background-color: #CDCBCD;
             border: none;
             width: 100%;
-            margin-top: 20px;
+            margin-top: 1.2rem;
             padding: 15px 32px;
             border-radius: 5px;
             color: #006A6A;
             display: inline-block;
             text-align: center;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 1rem;
             cursor: pointer;            
             transition-duration: 0.4s;
         }
@@ -99,6 +100,25 @@
         .icon{
             text-align: center;
             color: #E9E9E9;
+        }
+
+        @media screen and (max-width: 620px){
+            html{
+                font-size: 14px;
+            }
+
+            .flex-container{
+                flex-direction: column;
+            }
+            
+            .col-1, .col-2{
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .container{
+                width: 95%;
+            }
         }
 
     </style>
@@ -118,7 +138,7 @@
             </div>
         </div>
        <div class="flex-container">
-        <div class="coluna1">
+        <div class="col-1">
             <div class="topico">
                 Assinatura mensal:
             </div>
@@ -131,9 +151,9 @@
             </div>
             <button class="button">Assine Agora</button>
         </div>
-        <div class="coluna2">
+        <div class="col-2">
             <div class="icon">
-            <object data="groups_FILL0_wght400_GRAD0_opsz48.svg" type="image/svg+xml"></object>
+            <object data="groups_white_48dp.svg" type="image/svg+xml"></object>
             </div>
             <div>
                 Você terá acesso:
